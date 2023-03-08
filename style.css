@@ -1,0 +1,286 @@
+/* GERAL */
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700&display=swap');
+
+    :root{
+        --cor-principal:#FF6511;
+        --cor-secundaria:#00076e;
+    }
+    *{
+        margin: 0;
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.1rem;
+    }
+    .titulo-capa,.subtitulo-capa,.texto-embarque{
+        visibility: hidden;
+    }
+    .subtitulo-capa{
+        text-shadow:  0.1em 0.1em 0.3em #333;
+    }
+    .titulo-capa,.logo,.linksUteis{
+        text-shadow:  0.1em 0.1em 0.7em #333;
+    }
+
+    /* Media Queries*/
+
+
+
+
+    /* FimMedia Queries*/
+/* FIM GERAL */
+
+/* HEADER */
+    /* Navbar */
+        #container1{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 20px;
+            font-weight: 500;
+            color: white;
+        }
+        #container1>ul,li,a{
+            display: inline;
+            list-style-type: none;
+            text-decoration: none;
+            color: white;
+            padding-right: 8px;
+            font-weight: 400;
+        }
+        #container1>ul,li,a:hover{
+            color: var(--cor-principal);
+        }
+        .logo{
+            font-weight: 800;
+            font-size: 1.25rem;
+            margin-right: 20px;
+            text-decoration: none;
+        }
+        .linksUteis{
+            font-weight: 400;
+        }
+        /* Navbar fixo */
+            .fixo{
+                position: fixed;
+                width: 100%;
+                z-index: 1;
+                background-color: #F0F3FF;
+                transition: all .2s ease-in-out;
+            }
+            .logofixo{
+                font-weight: 800;
+                font-size: 1.25rem;
+                margin-right: 20px;
+                text-decoration: none;
+                color: var(--cor-secundaria);
+                text-shadow: none;
+            }
+            a.afixo{
+                color: #878787;
+                text-shadow: none;
+            }
+            a.afixo:hover{
+                color: var(--cor-principal);
+            }
+        /* Fim Navbar responsivo */
+    /* Fim Navbar */
+
+    /* Capa */
+        header{
+            background-image: url(assets/imagens/capa-fundo.png);
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+        }
+        #capa{
+            color: white;
+            display: flex;
+            justify-content: space-around;
+        }
+        .conteudo-capa{
+            padding-top: 100px;
+            padding-bottom: 200px;
+            padding-left: 30px;
+        }
+        h1{
+            font-size: 2rem;
+            color: var(--cor-principal);
+        }
+        h2{
+            font-size: 2.4rem;
+            padding-top: 20px;
+            max-width: 480px;
+        }
+    /* Fim Capa */
+/* FIM HEADER*/
+
+/* Benefícios/qualidades */
+.titulo-qualidades{
+    text-align: center;
+    padding-top: 55px;
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: var(--cor-principal);
+}
+#container-qualidades{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+.fa-truck-moving,.fa-location-dot,.fa-business-time{
+    font-size: 4rem;
+    color: var(--cor-principal);
+}
+.beneficio1,.beneficio2,.beneficio3{
+    padding-top: 40px;
+    color: rgb(77, 77, 77);
+}
+.beneficio1>h4,.beneficio2>h4,.beneficio3>h4{
+    padding-top: 20px;
+    font-weight: 400;
+}
+.beneficio1:hover{
+    padding-top: 35px;
+}
+.beneficio2:hover{
+    padding-top: 35px;
+}
+.beneficio3:hover{
+    padding-top: 35px;
+}
+/* Fim Benefícios/qualidades */
+
+#tela-embarque{
+    background-image: url(assets/imagens/fundo-embarque.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 100px 50px 100px 50px;
+    margin-top: 80px;
+}
+#tela-embarque>h4{
+    font-size: 3rem;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    max-width: 600px;
+}
+
+/* Formulário */
+.imagem-formulario{
+    width: 450px;
+    height: 550px;
+    border-radius: 20px;
+    background-color: #030fc2;
+    background-image: url(assets/imagens/fundo-embarque1.png);
+    background-position: center center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+#formulario{
+    padding: 50px;
+    padding-top: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    font-family: 'Poppins', sans-serif;
+    align-items: center;
+}
+input,textarea,button{
+    display: block;
+    margin-bottom: 25px;
+    font-size: 0.9rem;
+    background-color: #F0F3FF;
+    border: 0;
+    border-radius: 4px;
+    width: 100%;
+    height: 45px;
+    padding-left: 15px;
+}
+textarea{
+    height: 70px;
+    padding-top: 10px;
+    margin-bottom: 30px;
+}
+form>h5{
+    font-size: 1.5rem;
+    color: var(--cor-secundaria);
+    font-weight: 800;
+}
+form>p{
+    color: rgb(128, 128, 128);
+    margin-bottom: 25px;
+    font-size: 1rem;
+}
+label{
+    color: var(--cor-secundaria);
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+button{
+    font-weight: 500;
+    color: var(--cor-secundaria);
+}
+button:hover{
+    background-color: var(--cor-secundaria);
+    color: #F0F3FF;
+}
+footer{
+    display: flex;
+    background-color: #00021f;
+    color: white;
+    justify-content: space-around;
+    align-items: start;
+    padding: 100px;
+}
+.info1>p,.info1>p{
+    font-size: 0.9rem;
+}
+.info2>i{
+    color: var(--cor-principal);
+    font-size: 1.5rem;
+    padding: 15px 10px 20px 0px;
+}
+.detalhe-logo{
+    color: white;
+    font-size: 1.8rem;
+}
+.destacado{
+    font-weight: 500;
+}
+.direitos{
+    background-color: var(--cor-principal);
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+@media screen and (max-width: 600px) {
+    h1.titulo-capa{
+        font-size: 1.5rem;
+    }
+    h2.subtitulo-capa{
+        font-size: 1.7rem;
+    }
+    .titulo-qualidades{
+        font-size: 1.2rem;
+    }
+    #container-qualidades{
+        display: block;
+    }
+    #tela-embarque>h4{
+        font-size: 2rem;
+    }
+    .imagem-formulario{
+        background-position: center left;
+        height: 430px;
+    }
+    footer{
+        display: block;
+        padding: 70px;
+    }
+    .info1,.info2{
+        margin-top: 25px;
+    }
+}
