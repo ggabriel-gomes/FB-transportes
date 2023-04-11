@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://unpkg.com/scrollreveal"></script>
     <script src="https://kit.fontawesome.com/2ea647b60f.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
     <title>FB Transportes</title>
@@ -13,52 +12,147 @@
     <!-- HEADER -->
 
         <header>
-            <div id="container1" class="">
-                <div id="dFixo" class="logo">FB Transportes</div>
+            <div id="container1" class="active">
+                <h1 id="dFixo" class="logo">FB Transportes</h1>
                 <div class="linksUteis">
                     <ul>
-                        <li><a id="aFixo" href="#" class="">Home</a></li>
-                        <li><a id="a2Fixo" href="#formulario" class="">Contato</a></li>
+                        <li class="licont1">
+                            <a id="aFixo" href="#">Home</a>
+                        </li>
+                        <li class="licont1">
+                            <a id="a2Fixo" href="#formulario" class="">Contato</a>
+                        </li>
                     </ul>
                 </div>
             </div>
-            <div id="capa">
+
+            <section id="capa" data-anime="top">
                 <div class="conteudo-capa">
                     <h1 class="titulo-capa">Bem-vindo(a) à FB</h1>
-                    <h2 class="subtitulo-capa">a Transportadora que já chega carregada
-                        de oportunidades
+                    <h2 class="subtitulo-capa">a Transportadora que já chega carregada de oportunidades
                     </h2>
                 </div>
                 <div></div>
-            </div>
+            </section>
         </header>
     <!-- FIM HEADER -->
 
     <!-- MAIN-->
 
         <main>
-            <h3 class="titulo-qualidades">Conte com a experiência e excelência da FB</h3>
-            <div id="container-qualidades">
-                <div class="beneficio1">
-                    <i class="fa-solid fa-truck-moving"></i>
-                    <h4>Mais de <span style="color: #00076e;
-                    font-weight: 600;">500</span> viagens por ano</h4>
+            <section id="area_clientes" data-anime="center">
+                <div class="logos_titulo">
+                   <h3>Empresas parceiras:</h3>
                 </div>
-                <div class="beneficio2">
-                    <i class="fa-solid fa-location-dot"></i>
-                    <h4>Entregas para todo o <span style="color: #00076e; font-weight: 600;">Nordeste</span></h4>
+                <div class="logos__container">
+                    <div class="logos__img">
+                        <img src="assets/imagens/coca-cola.png" alt="Logo Coca-cola">
+                    </div>
+                    <div class="logos__img">
+                        <img src="assets/imagens/minalba.png" alt="Logo Minalba">
+                    </div>
                 </div>
-                <div class="beneficio3">
-                    <i class="fa-solid fa-business-time"></i>
-                    <h4>Desde <span style="color: #00076e; font-weight: 600;">2018</span> no mercado de transportes</h4>
+            </section>
+
+            <section id="descricaofb" data-anime="top">
+                <h6>Como surgiu a FB?</h6>
+                <h3 class="h3descricao">Nos conheça</h3>
+                <p class="p-descricao">A FB Transportes foi fundada em 2018 por dois irmãos caminhoneiros apaixonados por transportes e logística. Com anos de experiência no ramo, eles decidiram criar sua própria empresa de transportes para atender às necessidades do mercado nordestino. Desde então, a FB Transportes se estabeleceu como uma das principais empresas de transporte da região, com uma ampla gama de serviços para atender às demandas de seus clientes.</p>
+            </section>
+
+            <section id="experienciaExcelencia" data-anime="top">
+                <div id="container-qualidades">
+                    <div class="beneficio1">
+                        <i class="fa-solid fa-truck-moving"></i>
+                        <h4>Mais de <span style="color: #00076e;
+                        font-weight: 600;">500</span> viagens por ano</h4>
+                    </div>
+                    <div class="beneficio2">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <h4>Entregas para todo o <span style="color: #00076e; font-weight: 600;">Nordeste</span></h4>
+                    </div>
+                    <div class="beneficio3">
+                        <i class="fa-solid fa-business-time"></i>
+                        <h4>Desde <span style="color: #00076e; font-weight: 600;">2018</span> no mercado de transportes</h4>
+                    </div>
                 </div>
-            </div>
+            </section>
 
             <div id="tela-embarque">
-                <h4 class="texto-embarque">Embarque nessa com a FB e tenha mais controle da sua carga</h4>
+                <h4 class="texto-embarque" data-anime="center">Embarque nessa com a FB e tenha mais controle da sua carga</h4>
             </div>
 
-            <section id="formulario">
+            <!-- Feedbacks-->
+            <section id="avaliacao" data-anime="top">
+                <h3 id="h3-feedback">avaliação</h3>
+                <h2 id="h2-feedback">Veja o que outros clientes dizem</h2>
+                <div class="container-feedback">
+                    <div class="avaliacao">
+                        <div class="top-avaliacao">
+                            <div class="div-avaliacao">
+                                <h6 class="nome-avaliador inline">Carlos Oliveira</h6>
+                            </div>
+                            <div class="div-estrelas">
+                                <i class="fa-solid fa-star inline"></i>
+                                <i class="fa-solid fa-star inline"></i>
+                                <i class="fa-solid fa-star inline"></i>
+                                <i class="fa-solid fa-star inline"></i>
+                                <i class="fa-regular fa-star inline"></i>
+                            </div>
+                        </div>
+                        <p>"A FB Transporte de Carga é uma empresa extremamente confiável e eficiente. Eles entregaram minha mercadoria no prazo acordado e em perfeitas condições. O atendimento ao cliente também foi excepcional, com a equipe sendo muito atenciosa e prestativa em todos os momentos."</p>
+                    </div>
+                    <div class="avaliacao">
+                        <div class="top-avaliacao">
+                            <div class="div-avaliacao">
+                                <h6 class="nome-avaliador inline">Fernanda Costa</h6>
+                            </div>
+                            <div class="div-estrelas">
+                                <i class="fa-solid fa-star inline"></i>
+                                <i class="fa-solid fa-star inline"></i>
+                                <i class="fa-solid fa-star inline"></i>
+                                <i class="fa-solid fa-star inline"></i>
+                                <i class="fa-solid fa-star inline"></i>
+                            </div>
+                        </div>
+                        <p>"Eu nunca tive uma experiência tão positiva com uma empresa de transporte de carga antes. A FB Transporte de Carga foi incrível em todos os aspectos, desde a comunicação até a entrega final. Eles cuidaram da minha carga como se fosse deles, e eu não poderia estar mais satisfeita com o serviço prestado."</p>
+                    </div>
+                    <div class="avaliacao">
+                        <div class="top-avaliacao">
+                            <div class="div-avaliacao">
+                                <h6 class="nome-avaliador inline">Luiz Santos</h6>
+                            </div>
+                            <div class="div-estrelas">
+                                <i class="fa-solid fa-star inline"></i>
+                                <i class="fa-solid fa-star inline"></i>
+                                <i class="fa-solid fa-star inline"></i>
+                                <i class="fa-solid fa-star inline"></i>
+                                <i class="fa-regular fa-star inline"></i>
+                            </div>
+                        </div>
+                        <p>"A FB Transporte de Carga é uma empresa que eu recomendo sem hesitação. Eles são profissionais, pontuais e dedicados a garantir que minha carga chegue ao destino final com segurança e rapidez. Além disso, o preço foi justo e competitivo em relação a outras empresas do mercado."</p>
+                    </div>
+                    <div class="avaliacao">
+                        <div class="top-avaliacao">
+                            <div class="div-avaliacao">
+                                <h6 class="nome-avaliador inline">Ana Paula Silva</h6>
+                            </div>
+                            <div class="div-estrelas">
+                                <i class="fa-solid fa-star inline"></i>
+                                <i class="fa-solid fa-star inline"></i>
+                                <i class="fa-solid fa-star inline"></i>
+                                <i class="fa-solid fa-star inline"></i>
+                                <i class="fa-solid fa-star inline"></i>
+                            </div>
+                        </div>
+                        <p>"Minha experiência com a FB Transporte de Carga foi excelente. Eles foram extremamente flexíveis em relação aos horários de coleta e entrega, e a equipe sempre esteve disponível para responder a todas as minhas perguntas. A qualidade do serviço também foi impecável, e eu não hesitaria em usar a FB Transporte de Carga novamente no futuro."</p>
+                    </div>
+                </div>
+            </section>
+            <!-- FIM Feedbacks-->
+            <h3 id="h3-feedback">quer conversar conosco?</h3>
+            <h2 id="h2-feedback">Entre em contato para saber mais</h2>
+            <section id="formulario" data-anime="center">
                 <div class="imagem-formulario">
                 </div>
                 <form action="https://formspree.io/f/xvonapdn" method="POST">
@@ -83,16 +177,58 @@
                     <button type="submit">Enviar</button>
                 </form>
             </section>
+
+            <!-- FAQ -->
+            <h3 id="h3-feedback">não entendeu algo?</h3>
+            <h2 id="h2-feedback">Tire sua dúvida aqui</h2>
+            <section id="faq" data-anime="top">
+                <details>
+                    <summary>Quais tipos de carga a FB Transportes transporta?</summary>
+                    <p>A FB Transportes oferece serviços de transporte de cargas em geral, desde pequenas encomendas até grandes volumes. Nossa frota é equipada para transportar cargas de diferentes tipos, tamanhos e pesos.</p>
+                </details>
+
+                <details>
+                    <summary>Qual é a área de atuação da FB Transportes?</summary>
+                    <p>A FB Transportes atua em todo o território nordestino, oferecendo serviços de transporte de carga em todas as regiões do Nordeste.</p>
+                </details>
+                
+                <details>
+                    <summary>Qual é a capacidade de carga dos veículos da FB Transportes?</summary>
+                    <p>Nossa frota é composta por veículos com diferentes capacidades de carga, que variam de acordo com as necessidades dos clientes. Temos caminhões que transportam desde pequenas cargas até grandes volumes.</p>
+                </details>
+
+                <details>
+                    <summary>Como faço para contratar os serviços da FB Transportes?</summary>
+                    <p>Para contratar nossos serviços, basta entrar em contato conosco por telefone, e-mail ou preencher o formulário de contato acima. Nossa equipe está sempre pronta para atender às necessidades dos clientes e oferecer soluções logísticas personalizadas.</p>
+                </details>
+
+                <details>
+                    <summary>Como a FB Transportes garante a segurança das cargas transportadas?</summary>
+                    <p>A FB Transportes utiliza equipamentos de proteção e tecnologias avançadas para garantir que o transporte seja feito com total segurança. Além disso, nossos motoristas são treinados e capacitados para realizar o transporte de carga de forma segura e eficiente.</p>
+                </details>
+
+                <details>
+                    <summary>Qual é o prazo de entrega dos serviços da FB Transportes?</summary>
+                    <p>O prazo de entrega varia de acordo com o destino e as características da carga transportada. Nossa equipe está sempre à disposição para fornecer informações precisas sobre os prazos de entrega.</p>
+                </details>
+
+                <details>
+                    <summary>Outra dúvida</summary>
+                    <p>Acima tem uma área para entrar em contato. Informe seu nome, número e e-mail. E no campo "Mensagem" descreva sua dúvida. Prometemos responder o mais rápido possível.</p>
+                </details>
+
+            </section>
+            <!-- FIM FAQ -->
         </main>
     <!-- FIM MAIN-->
 
     <!-- FOOTER-->
         <footer>
-            <div class="logo">
-                <h1>FB <span class="detalhe-logo">Transportes</span></h1>
+            <div class="logo"  data-anime="center">
+                <h1 class="h1-footer">FB <span class="detalhe-logo">Transportes</span></h1>
             </div>
 
-            <div class="info1">
+            <div class="info1" data-anime="center">
                 <p><span class="destacado">Razão Social:</span> FB Transportes LTDA</p>
                 <p><span class="destacado">CNPJ:</span> 12.345.678/0001-10</p>
                 <br>
@@ -100,10 +236,10 @@
                 <p>Rua Dr. Renato Paes de Barros, 3</p>
             </div>
 
-            <div class="info2">
+            <div class="info2" data-anime="center">
                 <p class="destacado">Contato</p>
-                <i class="fa-brands fa-whatsapp"></i>
-                <i class="fa-regular fa-envelope"></i>
+                <a href="https://api.whatsapp.com/send?phone=5581997413479&text=Ol%C3%A1,%20gostaria%20de%20contratar%20um%20servi%C3%A7o%20de%20transporte%20da%20FB"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSDZcsFwdvQhsMCZhjBDvHsPthtjGMCrwrGWWwmRfxTSrjbkBTgSzqsbTRLrGKFvsvCPpnNv" target="_blank"><i class="fa-regular fa-envelope"></i></a>
                 <br>
                 <p><span class="destacado">Email:</span> moasbalbino@gmail.com</p>
                 <br>

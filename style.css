@@ -1,17 +1,17 @@
 /* GERAL */
     @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700&display=swap');
-
+    html{
+        scroll-behavior: smooth;
+    }
     :root{
         --cor-principal:#FF6511;
         --cor-secundaria:#00076e;
+        --cor-da-estrela: #ffd43b;
     }
     *{
         margin: 0;
         font-family: 'Roboto', sans-serif;
         font-size: 1.1rem;
-    }
-    .titulo-capa,.subtitulo-capa,.texto-embarque{
-        visibility: hidden;
     }
     .subtitulo-capa{
         text-shadow:  0.1em 0.1em 0.3em #333;
@@ -19,13 +19,6 @@
     .titulo-capa,.logo,.linksUteis{
         text-shadow:  0.1em 0.1em 0.7em #333;
     }
-
-    /* Media Queries*/
-
-
-
-
-    /* FimMedia Queries*/
 /* FIM GERAL */
 
 /* HEADER */
@@ -35,24 +28,29 @@
             justify-content: space-around;
             align-items: center;
             padding: 20px;
-            font-weight: 500;
-            color: white;
         }
-        #container1>ul,li,a{
+        .active{
+            color: white;
+            background-color: none;
+            transition: all .8s ease-in-out;
+        }
+        #container1>ul,.licont1,a{
             display: inline;
             list-style-type: none;
             text-decoration: none;
             color: white;
             padding-right: 8px;
-            font-weight: 400;
+            font-weight: 200;
         }
-        #container1>ul,li,a:hover{
+        #aFixo:hover{
+            color: var(--cor-principal);
+        }
+        #a2Fixo:hover{
             color: var(--cor-principal);
         }
         .logo{
-            font-weight: 800;
+            color: white;
             font-size: 1.25rem;
-            margin-right: 20px;
             text-decoration: none;
         }
         .linksUteis{
@@ -64,7 +62,7 @@
                 width: 100%;
                 z-index: 1;
                 background-color: #F0F3FF;
-                transition: all .2s ease-in-out;
+                transition: all .8s ease-in-out;
             }
             .logofixo{
                 font-weight: 800;
@@ -101,11 +99,11 @@
             padding-bottom: 200px;
             padding-left: 30px;
         }
-        h1{
+        .titulo-capa{
             font-size: 2rem;
             color: var(--cor-principal);
         }
-        h2{
+        .subtitulo-capa{
             font-size: 2.4rem;
             padding-top: 20px;
             max-width: 480px;
@@ -113,21 +111,73 @@
     /* Fim Capa */
 /* FIM HEADER*/
 
-/* Benefícios/qualidades */
-.titulo-qualidades{
-    text-align: center;
-    padding-top: 55px;
-    font-size: 1.6rem;
-    font-weight: 500;
-    color: var(--cor-principal);
+/* Clientes FB */
+#area_clientes{
+    margin-top: 55px;
+    margin-bottom: 85px;
 }
-#container-qualidades{
+.logos_titulo>h3{
+    text-align: center;
+    color: #ff6411c2;
+    font-weight: 400;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+.logos__container{
     display: flex;
+    padding-top: 2rem;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem 3rem;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .logos__img img{
+    height: 60px;
+    opacity: .3;
+    transition: .7s;
+  }
+  .logos__img img:hover{
+    opacity: .9;
+  }
+/* Fim Clientes FB */
+
+/* Conheça a FB */
+#descricaofb{
+    margin-top: 40px;
+    max-width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+#descricaofb>h6{
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: var(--cor-principal);
+    margin-bottom: 5px;
+}
+.h3descricao{
+    margin-bottom: 15px;
+    font-size: 2rem;
+    font-weight: 500;
+    color: var(--cor-secundaria);
+}
+.p-descricao{
+    color: #696969;
+    font-size: 1.2rem;
+}
+/* Fim Conheça a FB */
+
+/* Benefícios/qualidades */
+#container-qualidades{
+    max-width: 70%;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
     justify-content: space-around;
     text-align: center;
 }
 .fa-truck-moving,.fa-location-dot,.fa-business-time{
-    font-size: 4rem;
+    font-size: 3rem;
     color: var(--cor-principal);
 }
 .beneficio1,.beneficio2,.beneficio3{
@@ -135,8 +185,11 @@
     color: rgb(77, 77, 77);
 }
 .beneficio1>h4,.beneficio2>h4,.beneficio3>h4{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 180px;
     padding-top: 20px;
-    font-weight: 400;
+    font-weight: 300;
 }
 .beneficio1:hover{
     padding-top: 35px;
@@ -149,6 +202,7 @@
 }
 /* Fim Benefícios/qualidades */
 
+/* Seção imagem e texto */
 #tela-embarque{
     background-image: url(assets/imagens/fundo-embarque.jpg);
     background-attachment: fixed;
@@ -166,6 +220,57 @@
     text-align: center;
     max-width: 600px;
 }
+/* FIM Seção imagem e texto */
+
+/* FEEDBACKS */
+#h3-feedback{
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: var(--cor-principal);
+    margin-top: 60px;
+}
+#h2-feedback{
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin-bottom: 40px;
+    color: var(--cor-secundaria);
+}
+
+.container-feedback{
+    display: flex;
+    flex-wrap: wrap;
+    width: 85%;
+    max-width: 900px;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 80px;
+}
+.inline{
+    display: inline;
+}
+.avaliacao{
+    width: 38%;
+    max-width: 50%;
+    background-color: #F0F3FF;
+    padding: 25px;
+    margin: 15px;
+    border-radius: 15px;
+}
+.avaliacao>p{
+    margin-top: 15px;
+}
+.fa-star{
+    color: var(--cor-da-estrela);
+}
+.top-avaliacao{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/* FIM FEEDBACKS*/
 
 /* Formulário */
 .imagem-formulario{
@@ -175,12 +280,13 @@
     background-color: #030fc2;
     background-image: url(assets/imagens/fundo-embarque1.png);
     background-position: center center;
-    margin-top: 20px;
+    margin-top: 10px;
     margin-bottom: 40px;
 }
 #formulario{
     padding: 50px;
-    padding-top: 80px;
+    padding-top: 20px;
+    padding-bottom: 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -226,6 +332,44 @@ button:hover{
     background-color: var(--cor-secundaria);
     color: #F0F3FF;
 }
+/* FIM Formulário */
+
+/* FAQ */
+
+#faq{
+    width: 80%;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 100px;
+}
+details{
+    color: #00076e;
+    background-color: #F0F3FF;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    padding: 18px;
+}
+summary{
+    padding-left: 10px;
+}
+details > summary:first-of-type::before{
+    padding-right: 30px;
+}
+details>p{
+    color: #333;
+    margin-top: 10px;
+    padding-left: 12px;
+    border-radius: 8px;
+    border-left: 3px solid #FF6511;
+    margin-left: 12px;
+}
+details:hover{
+    background-color: #e4e9ff;
+}
+/*FIM Faq*/
+
+/* FOOTER */
 footer{
     display: flex;
     background-color: #00021f;
@@ -234,17 +378,21 @@ footer{
     align-items: start;
     padding: 100px;
 }
-.info1>p,.info1>p{
-    font-size: 0.9rem;
-}
-.info2>i{
-    color: var(--cor-principal);
-    font-size: 1.5rem;
-    padding: 15px 10px 20px 0px;
+.h1-footer{
+    font-size: 1.8rem;
+    color: #FF6511;
 }
 .detalhe-logo{
     color: white;
     font-size: 1.8rem;
+}
+.info1>p,.info1>p{
+    font-size: 0.9rem;
+}
+.info2>a>i{
+    color: var(--cor-principal);
+    font-size: 1.5rem;
+    padding: 15px 0px 20px 0px;
 }
 .destacado{
     font-weight: 500;
@@ -255,22 +403,65 @@ footer{
     text-align: center;
     padding: 25px;
 }
+/* FIM FOOTER*/
+
+/* SCROLL ANIMATION */
+[data-anime]{
+    opacity: 0;
+    transition: 0.7s;
+}
+[data-anime="top"]{
+    transform: translate3d(0px, -50px, 0);
+}
+[data-anime="center"]{
+    transform: translate3d(0px, -10px, 0);
+}
+[data-anime].animate{
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0);
+}
+
+/* RESPONSIVIDADE */
+@media screen and (max-width: 773px) {
+    #tela-embarque>h4 {
+        font-size: 2.4rem;
+    }
+    #h3-feedback {
+        font-size: 1.1rem;
+    }
+    #formulario {
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .avaliacao {
+        width: 35%;
+        max-width: 50%;
+    }
+    #faq {
+        width: 75%;
+    }
+}
 
 @media screen and (max-width: 600px) {
+    h1.logo{
+        font-size: 1.15rem;
+    }
+    ul{
+        padding-left: 15px;
+        padding-right: 0px;
+    }
+    .licont1{
+        padding-right: 0;
+    }
+    #dfixo,#aFixo,#a2Fixo{
+        font-size: 1rem;
+    }
     h1.titulo-capa{
         font-size: 1.5rem;
     }
     h2.subtitulo-capa{
         font-size: 1.7rem;
-    }
-    .titulo-qualidades{
-        font-size: 1.2rem;
-    }
-    #container-qualidades{
-        display: block;
-    }
-    #tela-embarque>h4{
-        font-size: 2rem;
     }
     .imagem-formulario{
         background-position: center left;
@@ -282,5 +473,42 @@ footer{
     }
     .info1,.info2{
         margin-top: 25px;
+    }
+
+
+    /* Section 1 ( Área clientes)*/
+    .logos__container{
+        flex-direction: column;
+    }
+    /* Section (Descrição)*/
+    .h3descricao {
+        font-size: 1.7rem;
+    }
+    #descricaofb {
+        max-width: 70%;
+    }
+    .titulo-qualidades{
+        font-size: 1.2rem;
+    }
+    #container-qualidades{
+        display: block;
+    }
+    /* Tela embarque*/
+    #tela-embarque>h4{
+        font-size: 1.7rem;
+    }
+    /* Section (Avaliação)*/
+    #h2-feedback {
+        font-size: 1.4rem;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 90%;
+    }
+    .fa-star {
+        font-size: 0.68rem;
+    }
+    .avaliacao {
+        width: 70%;
+        max-width: none;
     }
 }
