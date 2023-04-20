@@ -29,6 +29,9 @@
             align-items: center;
             padding: 20px;
         }
+        #fb-da-logo{
+            font-size: 1.3rem;
+        }
         .active{
             color: white;
             background-color: none;
@@ -61,7 +64,7 @@
                 position: fixed;
                 width: 100%;
                 z-index: 1;
-                background-color: #F0F3FF;
+                background-color: #00021f;
                 transition: all .8s ease-in-out;
             }
             .logofixo{
@@ -69,11 +72,14 @@
                 font-size: 1.25rem;
                 margin-right: 20px;
                 text-decoration: none;
-                color: var(--cor-secundaria);
+                color: white;
                 text-shadow: none;
             }
+            .fb-scroll{
+                color: #FF6511;
+            }
             a.afixo{
-                color: #878787;
+                color: #ffffff;
                 text-shadow: none;
             }
             a.afixo:hover{
@@ -163,7 +169,7 @@
 }
 .p-descricao{
     color: #696969;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 }
 /* Fim Conheça a FB */
 
@@ -243,7 +249,6 @@
     flex-wrap: wrap;
     width: 85%;
     max-width: 900px;
-    justify-content: center;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 80px;
@@ -363,6 +368,8 @@ details>p{
     border-radius: 8px;
     border-left: 3px solid #FF6511;
     margin-left: 12px;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 details:hover{
     background-color: #e4e9ff;
@@ -423,6 +430,20 @@ footer{
 
 /* RESPONSIVIDADE */
 @media screen and (max-width: 773px) {
+    /*feedback*/
+    .container-feedback{
+        width: 90%;
+        display: flex;
+        flex-wrap: nowrap;
+        max-width: none;
+        overflow-x: auto;
+    }
+    .avaliacao{
+        min-width: 250px;
+        max-height: 350px;
+    }
+
+
     #tela-embarque>h4 {
         font-size: 2.4rem;
     }
@@ -434,12 +455,11 @@ footer{
         margin-left: auto;
         margin-right: auto;
     }
-    .avaliacao {
-        width: 35%;
-        max-width: 50%;
-    }
     #faq {
         width: 75%;
+    }
+    .imagem-formulario{
+        display: none;
     }
 }
 
@@ -474,6 +494,9 @@ footer{
     .info1,.info2{
         margin-top: 25px;
     }
+    .imagem-formulario{
+        display: none;
+    }
 
 
     /* Section 1 ( Área clientes)*/
@@ -484,8 +507,11 @@ footer{
     .h3descricao {
         font-size: 1.7rem;
     }
-    #descricaofb {
+    #descricaofb{
         max-width: 70%;
+    }
+    .p-descricao{
+        font-size: 1rem;
     }
     .titulo-qualidades{
         font-size: 1.2rem;
@@ -506,9 +532,5 @@ footer{
     }
     .fa-star {
         font-size: 0.68rem;
-    }
-    .avaliacao {
-        width: 70%;
-        max-width: none;
     }
 }

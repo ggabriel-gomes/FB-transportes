@@ -3,6 +3,7 @@ const header = document.querySelector("#container1");
 const dFixo = document.querySelector("#dFixo");
 const aFixo = document.querySelector("#aFixo");
 const a2Fixo = document.querySelector("#a2Fixo");
+const fb = document.querySelector("#fb-da-logo");
 
 window.addEventListener("scroll", headerFixo)
 function headerFixo(){
@@ -11,6 +12,7 @@ function headerFixo(){
     dFixo.classList.add("logofixo")
     aFixo.classList.add("afixo")
     a2Fixo.classList.add("afixo")
+    fb.classList.add("fb-scroll")
   } else if (window.scrollY==0 && header.classList.contains("fixo")){
     header.classList.remove("fixo")
     header.classList.add("active")
@@ -18,6 +20,7 @@ function headerFixo(){
     dFixo.classList.add("logo")
     aFixo.classList.remove("afixo")
     a2Fixo.classList.remove("afixo")
+    fb.classList.remove("fb-scroll")
   }
 }
 
